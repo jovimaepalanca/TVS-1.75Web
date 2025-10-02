@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-02T15:40:54.521279" rpa="false" schemaversion="5">
-<suite id="s1" name="Testcases" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\testcases">
-<suite id="s1-s1" name="Dashboard" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\testcases\Dashboard.robot">
-<test id="s1-s1-t1" name="Open TVS Web Application" line="9">
-<kw name="Open Browser To TVS Dashboard Page">
-<msg time="2025-10-02T15:40:54.564885" level="FAIL">No keyword with name 'Open Browser To TVS Dashboard Page' found.</msg>
-<status status="FAIL" start="2025-10-02T15:40:54.564885" elapsed="0.000000">No keyword with name 'Open Browser To TVS Dashboard Page' found.</status>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-02T16:09:08.516830" rpa="false" schemaversion="5">
+<suite id="s1" name="Dashboard" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\scripts\Dashboard.robot">
+<test id="s1-t1" name="Open TVS Web Application" line="9">
+<kw name="Open Browser To TVS Dashboard Page" owner="dashboardPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-02T16:09:09.032886" level="INFO">Opening browser 'Chrome' to base url 'http://api-devtest-tvs1-75web.veridata.com.ph/home/dashboard'.</msg>
+<arg>${DASHBOARD URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-02T16:09:09.032886" elapsed="7.408372"/>
 </kw>
-<status status="FAIL" start="2025-10-02T15:40:54.564885" elapsed="0.000000">No keyword with name 'Open Browser To TVS Dashboard Page' found.</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-02T16:09:16.442256" elapsed="0.121298"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-10-02T16:09:16.568615" elapsed="0.002992"/>
+</kw>
+<status status="PASS" start="2025-10-02T16:09:09.021886" elapsed="7.549721"/>
+</kw>
+<status status="PASS" start="2025-10-02T16:09:09.020888" elapsed="7.623380"/>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="FAIL" start="2025-10-02T15:40:54.561887" elapsed="0.004532"/>
-</suite>
-<status status="FAIL" start="2025-10-02T15:40:54.523286" elapsed="0.043133"/>
+<status status="PASS" start="2025-10-02T16:09:08.517831" elapsed="8.139962"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Testcases">Testcases</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Dashboard">Testcases.Dashboard</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dashboard">Dashboard</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-02T15:40:54.563902" level="ERROR">Error in file 'C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\testcases\Dashboard.robot' on line 6: Resource file 'keywords\dashboardPage.robot' does not exist.</msg>
 </errors>
 </robot>
