@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-02T16:09:08.516830" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-02T16:36:58.150397" rpa="false" schemaversion="5">
 <suite id="s1" name="Dashboard" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\scripts\Dashboard.robot">
 <test id="s1-t1" name="Open TVS Web Application" line="9">
 <kw name="Open Browser To TVS Dashboard Page" owner="dashboardPage">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-02T16:09:09.032886" level="INFO">Opening browser 'Chrome' to base url 'http://api-devtest-tvs1-75web.veridata.com.ph/home/dashboard'.</msg>
+<msg time="2025-10-02T16:36:58.480787" level="INFO">Opening browser 'Chrome' to base url 'http://api-devtest-tvs1-75web.veridata.com.ph/home/dashboard'.</msg>
 <arg>${DASHBOARD URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-02T16:09:09.032886" elapsed="7.408372"/>
+<status status="PASS" start="2025-10-02T16:36:58.479788" elapsed="4.887824"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-02T16:09:16.442256" elapsed="0.121298"/>
+<status status="PASS" start="2025-10-02T16:37:03.368611" elapsed="0.077730"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-10-02T16:09:16.568615" elapsed="0.002992"/>
+<status status="PASS" start="2025-10-02T16:37:03.447372" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-10-02T16:09:09.021886" elapsed="7.549721"/>
+<status status="PASS" start="2025-10-02T16:36:58.479788" elapsed="4.968552"/>
 </kw>
-<status status="PASS" start="2025-10-02T16:09:09.020888" elapsed="7.623380"/>
+<kw name="Swipe Card button is displayed" owner="dashboardPage">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-10-02T16:37:03.982720" level="INFO">Element 'id:btnSwipeCard' is displayed.</msg>
+<arg>${SWIPE CARD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-02T16:37:03.455375" elapsed="0.527345"/>
+</kw>
+<status status="PASS" start="2025-10-02T16:37:03.454394" elapsed="0.528326"/>
+</kw>
+<status status="PASS" start="2025-10-02T16:36:58.478788" elapsed="5.504934"/>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" start="2025-10-02T16:09:08.517831" elapsed="8.139962"/>
+<status status="PASS" start="2025-10-02T16:36:58.152398" elapsed="5.832325"/>
 </suite>
 <statistics>
 <total>
