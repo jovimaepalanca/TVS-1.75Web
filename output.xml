@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-02T15:40:54.521279" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\testcases">
+<suite id="s1-s1" name="Dashboard" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\testcases\Dashboard.robot">
+<test id="s1-s1-t1" name="Open TVS Web Application" line="9">
+<kw name="Open Browser To TVS Dashboard Page">
+<msg time="2025-10-02T15:40:54.564885" level="FAIL">No keyword with name 'Open Browser To TVS Dashboard Page' found.</msg>
+<status status="FAIL" start="2025-10-02T15:40:54.564885" elapsed="0.000000">No keyword with name 'Open Browser To TVS Dashboard Page' found.</status>
+</kw>
+<status status="FAIL" start="2025-10-02T15:40:54.564885" elapsed="0.000000">No keyword with name 'Open Browser To TVS Dashboard Page' found.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" start="2025-10-02T15:40:54.561887" elapsed="0.004532"/>
+</suite>
+<status status="FAIL" start="2025-10-02T15:40:54.523286" elapsed="0.043133"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Dashboard">Testcases.Dashboard</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-02T15:40:54.563902" level="ERROR">Error in file 'C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\testcases\Dashboard.robot' on line 6: Resource file 'keywords\dashboardPage.robot' does not exist.</msg>
+</errors>
+</robot>
