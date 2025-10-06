@@ -45,30 +45,3 @@ Exit button is displayed
 
 Click Swipe Card button
     Click Element    ${SWIPE CARD}
-
-Click Manual Input
-    Click Element    ${MANUAL INPUT}
-
-Click Scan QR
-    Click Element    ${SCAN QR}
-
-Click Tap Card
-    Click Element    ${TAP CARD}
-
-Click Reprint LOA
-    Click Element    ${REPRINT LOA}
-
-Click Void Transaction
-    Click Element    ${VOID TRANSACTION}
-
-Click Order Paper
-    Click Element    ${ORDER PAPER}
-
-Click Accredited HMO
-    Click Element    ${ACCREDITED HMO}
-
-Click Settings
-    Click Element    ${SETTINGS}
-
-Click Exit
-    Click Element    ${EXIT}

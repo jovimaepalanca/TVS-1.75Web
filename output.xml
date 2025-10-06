@@ -1,139 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-03T00:13:54.470589" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1 Dashboard" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\test_suites\TC1_Dashboard.robot">
-<test id="s1-t1" name="Open TVS Web Application" line="9">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-10-04T00:00:22.003158" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Suites" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\test_suites">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary" type="SETUP">
+<arg>../screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-10-04T00:00:22.251188" elapsed="0.000000"/>
+</kw>
+<suite id="s1-s1" name="TC1 Dashboard" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\test_suites\TC1_Dashboard.robot">
+<test id="s1-s1-t1" name="Open TVS Web Application" line="10">
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-10-04T00:00:22.258927" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2025-10-04T00:00:22.258927" elapsed="0.000000"/>
+</kw>
 <kw name="Open Browser To TVS Dashboard Page" owner="dashboardPage">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:55.009198" level="INFO">Opening browser 'Chrome' to base url 'http://api-devtest-tvs1-75web.veridata.com.ph/home/dashboard'.</msg>
+<msg time="2025-10-04T00:00:22.260968" level="INFO">Opening browser 'Chrome' to base url 'http://api-devtest-tvs1-75web.veridata.com.ph/home/dashboard'.</msg>
 <arg>${DASHBOARD URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-03T00:13:55.007693" elapsed="3.252897"/>
+<status status="PASS" start="2025-10-04T00:00:22.259907" elapsed="4.327172"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.261697" elapsed="0.119427"/>
+<status status="PASS" start="2025-10-04T00:00:26.588101" elapsed="0.098096"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:55.006686" elapsed="3.375441"/>
+<status status="PASS" start="2025-10-04T00:00:22.259907" elapsed="4.426290"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.410453" level="INFO">Page title is 'TVS'.</msg>
+<msg time="2025-10-04T00:00:26.721045" level="INFO">Page title is 'TVS'.</msg>
 <arg>${TVS TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.385129" elapsed="0.026327"/>
+<status status="PASS" start="2025-10-04T00:00:26.687196" elapsed="0.033849"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:55.005222" elapsed="3.406234"/>
+<status status="PASS" start="2025-10-04T00:00:22.258927" elapsed="4.463114"/>
 </test>
-<test id="s1-t2" name="Verify Dashboard is displayed" line="13">
+<test id="s1-s1-t2" name="Verify Dashboard is displayed" line="14">
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-10-04T00:00:26.727051" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2025-10-04T00:00:26.725049" elapsed="0.002002"/>
+</kw>
 <kw name="Validate Dashboard Page Elements">
 <kw name="Swipe Card button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.631447" level="INFO">Element 'id:btnSwipeCard' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.109037" level="INFO">Element 'id:btnSwipeCard' is displayed.</msg>
 <arg>${SWIPE CARD}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.414452" elapsed="0.218032"/>
+<status status="PASS" start="2025-10-04T00:00:26.730039" elapsed="0.378998"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.414452" elapsed="0.218032"/>
+<status status="PASS" start="2025-10-04T00:00:26.730039" elapsed="0.380036"/>
 </kw>
 <kw name="Manual Input button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.694779" level="INFO">Element 'id:btnManualInput' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.130045" level="INFO">Element 'id:btnManualInput' is displayed.</msg>
 <arg>${MANUAL INPUT}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.632484" elapsed="0.063310"/>
+<status status="PASS" start="2025-10-04T00:00:27.110075" elapsed="0.019970"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.632484" elapsed="0.063310"/>
+<status status="PASS" start="2025-10-04T00:00:27.110075" elapsed="0.019970"/>
 </kw>
 <kw name="Scan QR button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.726656" level="INFO">Element 'id:btnScanCard' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.164549" level="INFO">Element 'id:btnScanCard' is displayed.</msg>
 <arg>${SCAN QR}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.699262" elapsed="0.027394"/>
+<status status="PASS" start="2025-10-04T00:00:27.130045" elapsed="0.034504"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.697240" elapsed="0.029416"/>
+<status status="PASS" start="2025-10-04T00:00:27.130045" elapsed="0.034504"/>
 </kw>
 <kw name="Tap Card button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.777531" level="INFO">Element 'id:btnTapCard' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.177158" level="INFO">Element 'id:btnTapCard' is displayed.</msg>
 <arg>${TAP CARD}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.727689" elapsed="0.049842"/>
+<status status="PASS" start="2025-10-04T00:00:27.164549" elapsed="0.012609"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.727689" elapsed="0.049842"/>
+<status status="PASS" start="2025-10-04T00:00:27.164549" elapsed="0.013612"/>
 </kw>
 <kw name="Reprint LOA button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.825598" level="INFO">Element 'id:btnReprint' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.209841" level="INFO">Element 'id:btnReprint' is displayed.</msg>
 <arg>${REPRINT LOA}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.778530" elapsed="0.048068"/>
+<status status="PASS" start="2025-10-04T00:00:27.178161" elapsed="0.031680"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.777531" elapsed="0.049067"/>
+<status status="PASS" start="2025-10-04T00:00:27.178161" elapsed="0.031680"/>
 </kw>
 <kw name="Void Transaction button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.851134" level="INFO">Element 'id:btnVoid' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.314068" level="INFO">Element 'id:btnVoid' is displayed.</msg>
 <arg>${VOID TRANSACTION}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.826598" elapsed="0.025539"/>
+<status status="PASS" start="2025-10-04T00:00:27.210875" elapsed="0.103193"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.826598" elapsed="0.025539"/>
+<status status="PASS" start="2025-10-04T00:00:27.210875" elapsed="0.103193"/>
 </kw>
 <kw name="Order Paper button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.894695" level="INFO">Element 'id:btnOrderPaper' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.352787" level="INFO">Element 'id:btnOrderPaper' is displayed.</msg>
 <arg>${ORDER PAPER}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.852137" elapsed="0.043528"/>
+<status status="PASS" start="2025-10-04T00:00:27.315066" elapsed="0.037721"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.852137" elapsed="0.044538"/>
+<status status="PASS" start="2025-10-04T00:00:27.315066" elapsed="0.037721"/>
 </kw>
 <kw name="Accredited HMO button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.927179" level="INFO">Element 'id:btnAccreditedHmo' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.370327" level="INFO">Element 'id:btnAccreditedHmo' is displayed.</msg>
 <arg>${ACCREDITED HMO}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.899662" elapsed="0.027517"/>
+<status status="PASS" start="2025-10-04T00:00:27.352787" elapsed="0.017540"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.898661" elapsed="0.028518"/>
+<status status="PASS" start="2025-10-04T00:00:27.352787" elapsed="0.017540"/>
 </kw>
 <kw name="Settings button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:58.962184" level="INFO">Element 'id:btnSettings' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.396838" level="INFO">Element 'id:btnSettings' is displayed.</msg>
 <arg>${SETTINGS}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.930178" elapsed="0.033042"/>
+<status status="PASS" start="2025-10-04T00:00:27.371326" elapsed="0.025512"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.928199" elapsed="0.035981"/>
+<status status="PASS" start="2025-10-04T00:00:27.370327" elapsed="0.026511"/>
 </kw>
 <kw name="Exit button is displayed" owner="dashboardPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-03T00:13:59.001179" level="INFO">Element 'id:btnExit' is displayed.</msg>
+<msg time="2025-10-04T00:00:27.413296" level="INFO">Element 'id:btnExit' is displayed.</msg>
 <arg>${EXIT}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-03T00:13:58.966182" elapsed="0.034997"/>
+<status status="PASS" start="2025-10-04T00:00:27.396838" elapsed="0.016458"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.965181" elapsed="0.035998"/>
+<status status="PASS" start="2025-10-04T00:00:27.396838" elapsed="0.016458"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.413453" elapsed="0.587726"/>
+<status status="PASS" start="2025-10-04T00:00:26.729048" elapsed="0.684248"/>
 </kw>
-<status status="PASS" start="2025-10-03T00:13:58.412451" elapsed="0.589736"/>
+<status status="PASS" start="2025-10-04T00:00:26.723040" elapsed="0.690256"/>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" start="2025-10-03T00:13:54.475934" elapsed="4.527253"/>
+<status status="PASS" start="2025-10-04T00:00:22.251188" elapsed="5.164533"/>
+</suite>
+<suite id="s1-s2" name="TC2 ManualInput" source="C:\Users\Jovi\Documents\GitHub\TVS-1.75Web\test_suites\TC2_ManualInput.robot">
+<test id="s1-s2-t1" name="Navigate to Manual Input Page" line="10">
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-10-04T00:00:27.421994" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2025-10-04T00:00:27.421994" elapsed="0.001014"/>
+</kw>
+<kw name="Open Browser To TVS Dashboard Page" owner="dashboardPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-04T00:00:27.424006" level="INFO">Opening browser 'Chrome' to base url 'http://api-devtest-tvs1-75web.veridata.com.ph/home/dashboard'.</msg>
+<arg>${DASHBOARD URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-04T00:00:27.424006" elapsed="2.252471"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-04T00:00:29.676477" elapsed="0.127671"/>
+</kw>
+<status status="PASS" start="2025-10-04T00:00:27.423008" elapsed="2.381140"/>
+</kw>
+<kw name="Click Manual Input" owner="dashboardPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-04T00:00:29.806173" level="INFO">Clicking element 'id:btnManualInput'.</msg>
+<arg>${MANUAL INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-04T00:00:29.806173" elapsed="0.571306"/>
+</kw>
+<status status="PASS" start="2025-10-04T00:00:29.805145" elapsed="0.572334"/>
+</kw>
+<status status="PASS" start="2025-10-04T00:00:27.420730" elapsed="2.959751"/>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2025-10-04T00:00:27.416720" elapsed="2.966424"/>
+</suite>
+<doc>Initialization file for all test suites.
+This file sets up the environment for all tests in this directory.</doc>
+<status status="PASS" start="2025-10-04T00:00:22.005456" elapsed="8.384319"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TC1 Dashboard">TC1 Dashboard</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test Suites">Test Suites</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="TC1 Dashboard">Test Suites.TC1 Dashboard</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC2 ManualInput">Test Suites.TC2 ManualInput</stat>
 </suite>
 </statistics>
 <errors>
